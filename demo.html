@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/emoji.css" />
+    <script src="js/emoji.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <title>DEMO</title>
+</head>
+
+<body>
+</body>
+
+    <div>
+        <span data-nickname='   测试昵称' id='nickname'>测试昵称</span>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+            var nickname = $('#nickname').attr('data-nickname');
+            var aaa = nickname.emoji();
+            $('#nickname').html(aaa);
+        });
+    </script>
+
+</html>
